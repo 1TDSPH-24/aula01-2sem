@@ -14,7 +14,7 @@ console.log("=========================================================");
 
 //Realizando a leitura de um array com o FOR OF - retorna valor
 for (let fruta of frutas) {
-    console.log(fruta)
+    console.log(fruta);
 }
 
 
@@ -22,5 +22,45 @@ console.log("=========================================================");
 
 //Realizando a leitura de um array com o FOR IN - retorna índice
 for (let indice in frutas) {
-    console.log(frutas[indice])
+    console.log(frutas[indice]);
+}
+
+
+console.log("=========================================================");
+
+//Realizando a leitura de um array com o FOREACH 
+frutas.forEach(function(fruta, indice, frutasArray) { //indice e array são opcionais
+    console.log(fruta, indice, frutasArray[indice]);    
+});
+
+
+console.log("=========================================================");
+
+//Inserindo novos dados com PUSH(FIM) E UNSHIFT(INICIO)
+frutas.unshift("Melancia");
+frutas.push("Melão");
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+
+console.log("=========================================================");
+
+//Removendo dados com POP(FIM) E SHIFT(INICIO)
+frutas.shift();
+frutas.pop();
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+//Alterando a ordem dos dados com SORT(ordem alfabética) e REVERSE(alterando a ordem atual)
+console.log("=========================================================");
+frutas.sort();
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+console.log("=========================================================");
+frutas.reverse();
+for (let fruta of frutas) {
+    console.log(fruta);
 }
