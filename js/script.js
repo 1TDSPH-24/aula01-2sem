@@ -41,6 +41,18 @@ for (let fruta of frutas) {
     console.log(fruta);
 }
 
+frutas.splice(2, 1);
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+let indicePesquisa = frutas.indexOf("banana");
+console.log("INDICE ENCONTRADO : ", indicePesquisa);
+frutas.splice(indicePesquisa, 1);
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
 
 
 
