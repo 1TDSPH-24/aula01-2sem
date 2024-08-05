@@ -43,3 +43,12 @@ frutas.push("melão");
 for (let fruta of frutas) {
     console.log(fruta);
 }
+
+console.log("============================================================");
+
+//removendo dados com POP(FIM) e SHIFT(INICIO)
+frutas.shift();
+frutas.pop();
+for (let fruta of frutas) {
+    console.log(fruta);
+}
