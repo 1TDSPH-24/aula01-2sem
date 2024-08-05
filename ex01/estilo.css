@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #B4B4B8;
+    padding: 1% 0;
+}
+
+header > h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+}
+
+header > h2 {
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 2%;
+}
+
+body{
+    background-color: #C7C8CC;
+}
+
+#container{
+    padding: 5% 0 5% 5%;
+}
+
+div > label {
+    font-size: 2rem;
+}
+
+div > input {
+    padding: 10px;
+    margin-left: 2px;
+    width: 12vw;
+}
+
+#botoes{
+    display: flex;
+    margin-top: 2%;
+    gap: 40px;
+}
+
+.botao{
+    background-color: #E3E1D9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao:hover{
+    transform: scale(1.2);
+}
+
+.titulo_lista{
+    font-size: 2rem;
+    padding: 2% 0 0% 5%;
+}
+
+#lista > li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 1% 0 0 5%;
+    background-color: #F2EFE5;
+    max-width: 50vw;
+    padding: 10px;
+    border: 2px solid black;
+}
