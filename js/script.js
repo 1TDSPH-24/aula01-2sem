@@ -52,3 +52,19 @@ frutas.pop();
 for (let fruta of frutas) {
     console.log(fruta);
 }
+
+
+console.log("============================================================");
+
+//alterando a ordem dos dados com SORT (ordem alfabetica) e REVERSE(alternando a ordem atual)
+frutas.sort();
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+console.log("============================================================");
+
+frutas.reverse();
+for (let fruta of frutas) {
+    console.log(fruta);
+}
