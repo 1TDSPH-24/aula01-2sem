@@ -57,3 +57,19 @@ frutas.reverse()
 for (let fruta of frutas) {
     console.log(fruta);
 }
+
+console.log("=============================================");
+//Removendo itens do Array com IndexOF e Splice
+frutas.splice(2, 1);
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+console.log("=============================================");
+//Removendo itens do Array com IndexOF e Splice
+let indicePesquisa = frutas.indexOf("banana");
+console.log("INDICE ENCONTRADO :", indicePesquisa);
+frutas.splice(indicePesquisa, 1);
+for (let fruta of frutas) {
+    console.log(fruta);
+}
