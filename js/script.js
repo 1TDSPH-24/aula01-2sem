@@ -44,15 +44,33 @@ for (let fruta of frutas) {
     console.log(fruta);
 }
 
+// console.log("==============================")
+// //Alterando a ordem dos dados com SORT(ordem alfabética) e REVERSE(alterando a ordem atual)
+// frutas.sort();
+// for (let fruta of frutas) {
+//     console.log(fruta);
+// }
+
+// console.log("==============================")
+// frutas.reverse();
+// for (let fruta of frutas) {
+//     console.log(fruta);
+// }
+
 console.log("==============================")
-//Alterando a ordem dos dados com SORT(ordem alfabética) e REVERSE(alterando a ordem atual)
-frutas.sort();
+//Removendo itens do Array com indexOF e Splice
+frutas.splice(2, 1); //Vamos passar para o splice o índice que queremos remover
+// A primeira casinha é o índice que selecionaremos e a segunda casinha é quantos itens a partir desse que removeremos
 for (let fruta of frutas) {
     console.log(fruta);
 }
 
 console.log("==============================")
-frutas.reverse();
+//Removendo itens do Array com indexOf e Splice
+let indicePesquisa = frutas.indexOf("banana");
+console.log("INDICE ENCONTRADO : ", indicePesquisa);
+frutas.splice(indicePesquisa, 1);
 for (let fruta of frutas) {
     console.log(fruta);
 }
+
