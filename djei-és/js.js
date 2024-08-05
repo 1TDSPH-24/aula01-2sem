@@ -54,3 +54,16 @@ futas.reverse()
 for (let futa of futas) {
     console.log(futa);
 }
+
+//remopvendo itens do arrai com indexOf e spice
+futas.splice(2, 1)
+for (let futa of futas) {
+    console.log(futa);
+}
+
+let indicePesquisa = futas.indexOf("banana");
+console.log("indice encontradot : ", indicePesquisa)
+futas.splice(indicePesquisa, 1)
+for (let futa of futas) {
+    console.log(futa);
+}
