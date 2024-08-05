@@ -16,10 +16,10 @@ for (let x = 0; x < frutas.length; x++) {
 console.log("===========================");
 //realizando a leitura de um array com o for of
 for (let fruta of frutas) {
-    console.log(frutas[fruta]);
+    console.log(fruta);
 }
 
 //realizando a leitura de um array com o for in
 for (let indice in frutas) {
-    console.log[indice];
+    console.log(frutas[indice]);
 }
