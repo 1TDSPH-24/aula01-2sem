@@ -29,3 +29,24 @@ frutas.forEach(function(fruta, indice, lista) {
     console.log(fruta, indice, lista);
 });
 
+console.log("=================================================================================");
+
+//Iserindo novos dados com PUSH(FIM) e UNSHIFT(INÍCIO).
+frutas.unshift("Melancia");
+frutas.push("Melão");
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+console.log("=================================================================================");
+
+//Removendo novos dados com POP(FIM) e SHIFT(INÍCIO).
+frutas.shift();
+frutas.pop();
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+
+
+
