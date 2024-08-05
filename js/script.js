@@ -56,15 +56,31 @@ for (let fruta of frutas) {
 
 console.log("============================================================");
 
-//alterando a ordem dos dados com SORT (ordem alfabetica) e REVERSE(alternando a ordem atual)
-frutas.sort();
-for (let fruta of frutas) {
-    console.log(fruta);
-}
+// //alterando a ordem dos dados com SORT (ordem alfabetica) e REVERSE(alternando a ordem atual)
+// frutas.sort();
+// for (let fruta of frutas) {
+//     console.log(fruta);
+// }
+
+// console.log("============================================================");
+
+// frutas.reverse();
+// for (let fruta of frutas) {
+//     console.log(fruta);
+// }
+
+console.log("============================================================");
+//["zimbro", "kiwi", "yamamomo", "banana", "wampe"]
+//removendo intens da array com idexOF e splice
+frutas.splice(2, 1);
+console.log(frutas)
 
 console.log("============================================================");
 
-frutas.reverse();
+//removendo itrens do array com indexOF
+let indicePesquisa = frutas.indexOf("banana");
+console.log("indice encontrado : ", indicePesquisa);
+frutas.splice(indicePesquisa, 1);
 for (let fruta of frutas) {
     console.log(fruta);
 }
