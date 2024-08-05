@@ -15,19 +15,19 @@ for (let fruta of frutas) {
     console.log(fruta)
 }
 
-console.log("======================================")
+console.log("======================================");
 //realizando a leitura de um array com for in
 for (let indice in frutas) {
     console.log(frutas[indice]);
 }
 
-console.log("======================================")
+console.log("======================================");
 //realizando a leitura de um array com for each
 frutas.forEach(function (fruta, indice, frutasArray) {
     console.log("COM FOR-EACH", fruta, indice, frutasArray[indice]);
 });
 
-console.log("======================================")
+console.log("======================================");
 //inserindo novos dados com PUSH(fim) e UNSHIFT(INICIO)
 frutas.unshift("melancia");
 frutas.push("melão");
@@ -35,7 +35,7 @@ for (let fruta of frutas) {
     console.log(fruta);
 }
 
-console.log("======================================")
+console.log("======================================");
 //removendo dados com POP(fim) e SHIFT(INICIO)
 frutas.shift();
 frutas.pop();
@@ -43,7 +43,7 @@ for (let fruta of frutas) {
     console.log(fruta);
 }
 
-console.log("======================================")
+console.log("======================================");
 //alternando a ordem dos dados com SORT(ordem alfabetica) e REVERSE(alterando a ordem atual)
 frutas.sort()
 for (let fruta of frutas) {
@@ -54,3 +54,24 @@ for (let fruta of frutas) {
     console.log(fruta);
 }
 
+console.log("======================================");
+frutas.reverse();
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+//Removendo itens do array com Splice
+console.log("======================================");
+frutas.splice(2, 1);
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+//Removendo itens do array com indexOf
+console.log("======================================");
+frutas.indexOf("Banana");
+console.log("INDICE ENCONTRADO: ", indicePesquisa);
+frutas.splice(indicePesquisa, 1);
+for (let fruta of frutas) {
+    console.log(fruta);
+}
