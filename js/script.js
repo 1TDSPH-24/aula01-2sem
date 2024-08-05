@@ -10,5 +10,18 @@ console.table(frutas);
 
 for (let x = 0; x < frutas.length; x++) {
     console.log(frutas[x]);
+}
 
+console.log("===========================================")
+
+// Realizando a leitura de um Array com um FOR OF
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+console.log("===========================================")
+
+// Realizando a leitura de um Array com um FOR IN
+for (let indice in frutas) {
+    console.log(frutas[indice]);
 }
