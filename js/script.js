@@ -50,7 +50,7 @@ for (let fruta of frutas) {
 console.log("=== Sort ===");
 
 //Alterando a ordem dos dados com SORT(ORDEM ALFABÉTICA).
-frutas.sort()
+frutas.sort(); // ["Banana", "Kiwi", "Wampe", "Yamamomo", "ZImbro"]
 for (let fruta of frutas) {
     console.log(fruta);
 }
@@ -58,10 +58,18 @@ for (let fruta of frutas) {
 console.log("=== Reverse ===");
 
 //Alterando a ordem dos dados com REVERSE(ALTERANDO A ORDEM ATUAL).
-frutas.reverse()
+frutas.reverse(); // ["Zimbro", "Yamamomo", "Wampe", "Kiwi", "Banana"]
 for (let fruta of frutas) {
     console.log(fruta);
 }
+
+console.log("=== Splice ===");
+
+frutas.splice(2, 1); // ["Zimbro", "Yamamomo", "Kiwi", "Banana"]
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
 
 
 
