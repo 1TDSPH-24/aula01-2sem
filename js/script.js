@@ -15,6 +15,13 @@ console.log("============================================================");
 
 
 //realizando a leitura de um array com um FOR OF
-for (let frutas of frutas) {
-    console.log(fruta);
+for (let fruta of frutas) {
+    console.log(frutas);
+}
+
+console.log("============================================================");
+
+//realizando a leitura de um array com um FOR IN
+for (let indice in frutas) {
+    console.log(frutas[indice]);
 }
