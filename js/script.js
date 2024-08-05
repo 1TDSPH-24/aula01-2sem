@@ -47,6 +47,24 @@ for (let fruta of frutas) {
     console.log(fruta);
 }
 
+console.log("=================================================================================");
+
+//Alterando a ordem dos dados com SORT(ORDEM ALFABÉTICA).
+frutas.sort()
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+console.log("=================================================================================");
+
+//Alterando a ordem dos dados com REVERSE(ALTERANDO A ORDEM ATUAL).
+frutas.reverse()
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+
+
 
 
 
