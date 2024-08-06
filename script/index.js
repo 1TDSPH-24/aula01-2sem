@@ -41,3 +41,4 @@ let indicePesquisa = frutas.indexOf("banana");
 frutas.splice(indicePesquisa, 1)
 console.log(frutas)
 
+
