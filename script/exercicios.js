@@ -47,6 +47,7 @@ function mostrar(array){
         for(let x = 0; x < array.length; x++){
             let nome = array[x]
             let li = document.createElement("li")
+            li.classList.add("lista")
             li.appendChild(document.createTextNode(nome))
             ul.appendChild(li)
             }
