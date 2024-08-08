@@ -50,10 +50,19 @@ function mostrar(array){
             li.classList.add("lista")
             li.appendChild(document.createTextNode(nome))
             ul.appendChild(li)
-            }
+            let btnDestruct = document.createElement("button")
+            btnDestruct.innerText = " x "
+            li.appendChild(btnDestruct)
+            btnDestruct.addEventListener("click", ()=>{
+                let parent = btnDestruct.parentElement;
+                parent.remove()
+            })
 
         }
-    }  
+    }   
+    }
+    
+    
 
 btnOA.addEventListener("click",()=>{
     let namesOA = clone(names)
