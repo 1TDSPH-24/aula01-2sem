@@ -1,40 +1,58 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let formulario = document.getElementById('formulario');
-    let listaNomes = document.getElementById('listaNomes');
-    let ordenarBtn = document.getElementById('ordenar');
-    let reverterBtn = document.getElementById('reverter');
-    let nomes = [];
 
-    formulario.addEventListener('submit', (event) => {
-        event.preventDefault();
-        let nome = document.getElementById('nome').value;
-        if (nome) {
-            nomes.push(nome);
-            document.getElementById('nome').value = '';
-            atualizarLista();
-        }
-    });
 
-    ordenarBtn.addEventListener('click', () => {
-        nomes.sort();
-        atualizarLista();
-    });
+//Criando um array de alunos
+let alunos = ["Leticia", "Mariana","Pedro","Felipe","Vitor","Enrico", "Israel"];
 
-    reverterBtn.addEventListener('click', () => {
-        nomes.reverse();
-        atualizarLista();
-    });
+//Recuperando a lista ul que está no HTML de id 'lista'
+let lista = document.getElementById('lista');
 
-    function atualizarLista() {
-        listaNomes.innerHTML = '';
-        for (let nome of nomes) {
-            let li = document.createElement('li');
-            li.textContent = nome;
-            listaNomes.appendChild(li);
-        }
-    }
+
+//Botão para adicionar item ao final da lista
+document.getElementById("btnAdd").addEventListener("click", ()=>{
+    let inputNome = document.getElementById("idNome");
+    alunos.push(inputNome.value);
+    renderizaLista();
+    inputNome.value = "";
 });
 
-function irproexum() {
-    window.location.href = "../exercicio-01-arrays.html";
+//Botão para colocar em ordem alfábetica a lista
+document.getElementById("btnOrdenar").addEventListener("click", ()=>{
+    alunos.sort();
+    renderizaLista();
+});
+
+//Botão para reverter a ordem atual da lista.
+document.getElementById("btnReverte").addEventListener("click", ()=>{
+    alunos.reverse();
+    renderizaLista();
+});
+
+//Botão para apagar itens do final da lista
+document.getElementById("btnDeletar").addEventListener("click", ()=>{
+    alunos.pop();
+    renderizaLista();
+});
+
+function renderizaLista(){
+    lista.innerHTML = "";
+    //Preenchendo a lista com forEach
+    alunos.forEach((aluno,indice)=>{
+        //Criar um elemento li para ser adicionando a lista
+        let elementoLi = document.createElement("li");
+         //Adicionando texto ao elemento li
+        elementoLi.textContent = (indice+1) +" - "+ aluno;
+
+        //Criando o botao de autodestruição
+        let botaoDeletar = document.createElement("button");
+        botaoDeletar.textContent = " x ";
+        //Inserindo o botão no li
+        elementoLi.appendChild(botaoDeletar);
+        
+
+        //Inserindo o elemento li na lista
+        lista.appendChild(elementoLi);
+    });
 }
+
+
+renderizaLista();
