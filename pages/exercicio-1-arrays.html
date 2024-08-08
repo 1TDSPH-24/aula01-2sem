@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Ribeiro Tardochi Da Silva Rm 555100</title>
+    <script src="../script/exercicios.js" defer></script>
+    <link rel="stylesheet" href="../css/exercicio-1.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Manipulação de Arrays</h1>
+        <div class="forms">
+        <fieldset class="fieldset">
+            <h1 class="h1-form">Adicionar nomes</h1>
+            <form 
+            id="formId"
+            class="form"
+            action="./exercicios.html" 
+            method="get"
+            onsubmit="return salvar(event)">
+                <input id="idName" class="form-input"/>
+                <button id="idBtnSubmit" type="submit" class="btn">Adicionar nome</button>
+            </form>
+        </fieldset>
+        </div>
+        <div class="btns">
+            <button class="btn" id="btnOA">Ordem Alfabética</button>
+            <button class="btn" id="btnRL">Reverter Array</button>
+            <button class="btn" id="btnOR">Array Original</button>
+        </div>
+        <ul id="ulId" class="array">
+        </ul>
+    </div>
+</body>
+</html>

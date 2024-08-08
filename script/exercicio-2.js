@@ -1,8 +1,10 @@
 let input = document.getElementById("idName")
+let inputRemove = document.getElementById("idRemoveName")
 let ul = document.getElementById("ulId")
 let btnOA = document.getElementById("btnOA")
 let btnR = document.getElementById("btnRL")
 let btnOR = document.getElementById("btnOR")
+let btnRemove = document.getElementById("idBtnRemove")
 let names = []
 
 
@@ -14,6 +16,21 @@ function salvar(event){
         input.value = ""
         return;
     }
+    return;
+}
+
+function RemoveName(event){
+    event.preventDefault();
+    if(inputRemove.value != ""){
+        let index = names.indexOf(inputRemove.value);
+        if(index != -1){
+            names.splice(index,1)
+            mostrar(names)
+            inputRemove.value = ""
+            return;
+        } 
+    }
+    window.alert("Nenhum nome encontrado na lista")
     return;
 }
 
